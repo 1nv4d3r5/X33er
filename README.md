@@ -1,7 +1,7 @@
 X33er
 ==
 
-X33er is an tiny open source penetration testing tool that automates the process of detecting and Cross Site Scripting (XSS) in Web-Application(s). It comes with a faster detection engine, easily to configurate it and make it to your owm machine, this will provide you during a audit systems to preform a wide scan on your victim and find a places that you can play and make your own paylod.
+X33er is an tiny open source penetration testing tool that automates the process of detecting and Cross Site Scripting (XSS) in Web-Application(s). It comes with a faster detection engine, easily to configurate. That bring the power to your machine, this will help you during penetration testing or just to preform a wide scan on your victim and find a places that you can play and make your own paylod before he find it (;
 
 Usage
 ----
