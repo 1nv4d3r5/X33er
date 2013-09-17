@@ -6,9 +6,11 @@ X33er is an tiny open source penetration testing tool that automates the process
 Usage
 ----
 
-To strat and enjoy the power of the tool all you have to do is a simple line:
+To start and enjoy the power of the tool all you have to do is a simple line:
 
     python xsser.py --target="http://mytarget.com"
+    
+.. Then press <ENTER>, do you think you can do it ? (;
     
 Contact
 ----
