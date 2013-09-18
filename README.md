@@ -10,8 +10,6 @@ To start and enjoy the power of the tool all you have to do is a simple line:
 
     python xsser.py --target="http://mytarget.com"
     
-.. Then press <ENTER>, do you think you can do it ? (;
-    
 Contact
 ----
 If you have any ideas or just you want to donate this project please feel to contact with me (;
