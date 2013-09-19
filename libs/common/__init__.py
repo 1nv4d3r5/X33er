@@ -13,3 +13,7 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 @for more information see <http://www.gnu.org/licenses/>
 """
+
+__all__ = ["basic","jsfile"]
+
+pass
