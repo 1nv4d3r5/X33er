@@ -41,10 +41,40 @@ def RunAudit(URL):
             regex = re.search(bootstrap.PCREPayload,data)
             if regex:
                 print "[ + ] Ohhh yes !! We FOUND vulnerability in " + Payload + " ! \n The URL is: " + PayloadsURL[Payload]
-                sys.exit(0);
+                if bootstrap.StopOnSuccess == 'yes':
+                    sys.exit(0);
+                else:
+                    continue
             else:
                 print '[ + ] Try to Inject in ' + PayloadsURL[Payload] + '..'
         except HTTPError, e:
             print '[ -] Sorry in ' + PayloadsURL[Payload] + ' we can\'t reach the page';
         finally:
             print '[ + ] Operation for ' + PayloadsURL[Payload] + ' has been done.. '
+
+def RunAuditWithCustomPayload(URL,Payload,Pattern):
+    PayloadsURL = {}
+    URLtoReplaceIn = str(URL);
+    onlyQueryString = urlparse(URL).query
+    SepertedParams = onlyQueryString.split("&")
+    for Query in SepertedParams:
+        SplitParams = Query.split("=")
+        NameParam = SplitParams[0]
+        if len(SplitParams) < 2:
+            MissingValue = "?" + NameParam + "=" + Payload
+            PayloadsURL[NameParam] = URLtoReplaceIn.replace("?" + NameParam,MissingValue)
+        else:
+            ValueParam = SplitParams[1]
+            PayloadsURL[NameParam] = URLtoReplaceIn.replace(ValueParam,Payload)
+    for Payload in PayloadsURL:
+        try:
+            data = scan.getHTMLSourceFrom(PayloadsURL[Payload])
+            regex = re.findall(Pattern,data)
+            if regex:
+                print "[ + ] Ohhh yes !! We FOUND vulnerability in " + Payload + " ! \n The URL is: " + PayloadsURL[Payload]
+                if bootstrap.StopOnSuccess == 'yes':
+                    sys.exit(0);
+                else:
+                    continue
+        except HTTPError, e:
+            print '[ - ] The Payload of ' + Payload + ' was rejected, the webserver returned '+e.code;

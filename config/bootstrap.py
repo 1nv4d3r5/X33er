@@ -30,6 +30,17 @@ Payload = "'><\""
 # Here you set the same payload but in PCRE for the engine
 PCREPayload = '\'\>\<\"'
 
+######### Finding Status #######
+# This setting will allow to set if you wish
+# that X33er will stop when he will found the vulnerability or
+# let him continue to another payloads as well.
+# @defaultSetting = yes
+# @Settings:
+#  [+] yes - Stop On success
+#  [+] no - Continue to the next payload, even if you got it already
+######################################
+StopOnSuccess = 'yes'
+
 ######### Non-Same HOST #######
 # This setting will allow you to exclude links
 # that doesn't have the same HOST in the victim
@@ -40,7 +51,7 @@ PCREPayload = '\'\>\<\"'
 #  [+] no - Scan ALL kinds of links
 #  [+] yes - Ignore in Scan a different hosts
 ######################################
-RemoveNotSameHost = 'no'
+RemoveNotSameHost = 'yes'
 
 ######### Detection Links Engine #######
 # In This setting you will decide how the XS33er should
