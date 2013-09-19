@@ -8,7 +8,11 @@ Usage
 
 To start and enjoy the power of the tool all you have to do is a simple line:
 
-    python xsser.py --target="http://mytarget.com"
+    python xsser.py --url="http://mytarget.com"
+    
+Don't forget if you want any help you can use:
+ 
+    python xsser.py --help
     
 Contact
 ----
