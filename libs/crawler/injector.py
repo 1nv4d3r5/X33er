@@ -46,11 +46,11 @@ def RunAudit(URL):
                 else:
                     continue
             else:
-                print '[ + ] Try to Inject in ' + PayloadsURL[Payload] + '..'
+                print '[ + ] Try to Inject in `' + Payload + '` Parameter..'
         except HTTPError, e:
             print '[ -] Sorry in ' + PayloadsURL[Payload] + ' we can\'t reach the page';
         finally:
-            print '[ + ] Operation for ' + PayloadsURL[Payload] + ' has been done.. '
+            print '[ + ] Operation for `' + Payload + '` has been done.. '
 
 def RunAuditWithCustomPayload(URL,Payload,Pattern):
     PayloadsURL = {}
