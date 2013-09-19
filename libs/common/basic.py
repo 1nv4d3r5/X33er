@@ -14,7 +14,7 @@ GNU General Public License for more details.
 @for more information see <http://www.gnu.org/licenses/>
 """
 
-######### Payloads For Basic Audit #######
+######### Payloads For Basic[s] Audit #######
 
 Payloads = {
     "Script Payload with SingleQuotes":"'><script>alert('X33er');</script>",

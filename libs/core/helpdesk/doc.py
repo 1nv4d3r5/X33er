@@ -30,7 +30,7 @@ GNU General Public License for more details.
 @for more information see <http://www.gnu.org/licenses/>
 ###################################################################
 """
-    print "Supported Audits:\n"
+    print "Supported Audits:\n\n"
     print "[ - ] JavaScript - Will Allow you to pentest / audit any malicious\n\t\t\tjavascript that you can inject into JS file\n"
     print "[ - ] Basic - Will Allow you to pentest / audit any input in the GET\n\t\tthat could be use as input from the user"
 

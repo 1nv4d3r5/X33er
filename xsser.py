@@ -48,6 +48,7 @@ except BaseException,e:
     print "[ !!! ] Please check again the URL or re-check your internet connection."
     sys.exit(0)
 
+# Act as user's input
 if TypeMe == "basic":
     print "[ ~ ] Analayze links on the page, it could take a moment.."
     GettingAllLinks = scan.getFromURL(urlInput);

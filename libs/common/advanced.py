@@ -14,4 +14,14 @@ GNU General Public License for more details.
 @for more information see <http://www.gnu.org/licenses/>
 """
 
-__all__ = ["doc"]
+######### Payloads For Advanced Audit #######
+### @todo: Add this Payload here "><body OnloAd=JavaScript:eval(alert(0));>
+##############################################
+
+Payloads = {
+
+}
+
+PayloadsPCRE = {
+
+}

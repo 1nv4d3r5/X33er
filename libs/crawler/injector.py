@@ -46,6 +46,7 @@ def RunAudit(URL):
                 else:
                     continue
             else:
+                # Changed this line
                 print '[ + ] Try to Inject in `' + Payload + '` Parameter..'
         except HTTPError, e:
             print '[ -] Sorry in ' + PayloadsURL[Payload] + ' we can\'t reach the page';

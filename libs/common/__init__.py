@@ -15,5 +15,3 @@ GNU General Public License for more details.
 """
 
 __all__ = ["basic","jsfile"]
-
-pass

@@ -14,7 +14,7 @@ GNU General Public License for more details.
 @for more information see <http://www.gnu.org/licenses/>
 """
 
-######### Payloads For JavaScriptCode Audit #######
+######### Payloads For JavaScriptCode[s] Audit #######
 
 Payloads = {
     "Basic Payload for Breaking code using DoubleQuotes":"\";alert('X33er');\"",
